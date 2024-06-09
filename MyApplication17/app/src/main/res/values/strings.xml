@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="screen_smart">Screen Smart</string>
+    <string name="your_name">Student Name</string>
+    <string name="student_number">Student Number</string>
+    <string name="todo">TODO</string>
+    <string name="start">Start</string>
+    <string name="exit">Exit</string>
+    <string name="save">Save</string>
+    <string name="view_details">View Details</string>
+    <string name="clear_data">Clear Data</string>
+    <string name="enter_afternoon_screen_time_minutes">Enter afternoon screen time (minutes)</string>
+    <string name="enter_morning_screen_time_minutes">Enter morning screen time (minutes)</string>
+    <string name="details_for_each_day">Details for each day:</string>
+    <string name="average_screen_time">Average Screen Time:</string>
+    <string name="back_to_main_screen">Back to Main Screen</string>
+    <string name="note">Note...</string>
+</resources>
