@@ -1,0 +1,231 @@
+Index: app/src/main/res/layout/activity_detail.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ScrollView xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:padding=\"16dp\"\r\n    android:id=\"@+id/details\"\r\n\r\n    tools:context=\".DetailActivity\">\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n       android:gravity=\"center\"\r\n        android:orientation=\"vertical\">\r\n\r\n        <TextView\r\n            android:id=\"@+id/tvDetails\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:text=\"@string/details_for_each_day\"\r\n            android:textSize=\"18sp\"\r\n            android:padding=\"15dp\"\r\n            android:background=\"@drawable/edit_text_bg\"\r\n            android:paddingBottom=\"16dp\"/>\r\n\r\n        <TextView\r\n            android:id=\"@+id/tvAverage\"\r\n            android:background=\"@drawable/edit_text_bg\"\r\n            android:layout_width=\"match_parent\"\r\n            android:textStyle=\"bold\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:text=\"@string/average_screen_time\"\r\n            android:padding=\"20dp\"\r\n            android:textSize=\"18sp\"\r\n\r\n            />\r\n\r\n        <Button\r\n            android:id=\"@+id/btnBack\"\r\n            android:backgroundTint=\"@color/black\"\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_marginTop=\"40dp\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:text=\"@string/back_to_main_screen\"/>\r\n    </LinearLayout>\r\n</ScrollView>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_detail.xml b/app/src/main/res/layout/activity_detail.xml
+--- a/app/src/main/res/layout/activity_detail.xml	(revision 857d33ff97659f06ce6c0a66c5d28697f3573ae0)
++++ b/app/src/main/res/layout/activity_detail.xml	(date 1718020752529)
+@@ -18,10 +18,10 @@
+             android:id="@+id/tvDetails"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+-            android:text="@string/details_for_each_day"
++            android:text="Degrees"
+             android:textSize="18sp"
+             android:padding="15dp"
+-            android:background="@drawable/edit_text_bg"
++            android:background="@drawable/ic_launcher_foreground"
+             android:paddingBottom="16dp"/>
+ 
+         <TextView
+@@ -30,7 +30,7 @@
+             android:layout_width="match_parent"
+             android:textStyle="bold"
+             android:layout_height="wrap_content"
+-            android:text="@string/average_screen_time"
++            android:text="Average Temperature"
+             android:padding="20dp"
+             android:textSize="18sp"
+ 
+Index: app/src/main/res/layout/activity_main.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:orientation=\"vertical\"\r\n    android:padding=\"16dp\"\r\n    android:id=\"@+id/main\"\r\n    android:gravity=\"center\"\r\n    tools:context=\".MainActivity\">\r\n\r\n    <EditText\r\n        android:id=\"@+id/etMorningTime\"\r\n        android:layout_width=\"320dp\"\r\n        android:layout_height=\"50dp\"\r\n         android:paddingStart=\"12dp\"\r\n       android:background=\"@drawable/edit_text_bg\"\r\n        android:hint=\"@string/enter_morning_screen_time_minutes\"\r\n        android:inputType=\"number\"\r\n        tools:ignore=\"RtlSymmetry\" />\r\n\r\n    <EditText\r\n        android:id=\"@+id/etAfternoonTime\"\r\n        android:layout_width=\"320dp\"\r\n        android:layout_height=\"50dp\"\r\n        android:paddingStart=\"12dp\"\r\n\r\n        android:background=\"@drawable/edit_text_bg\"\r\n        android:hint=\"@string/enter_afternoon_screen_time_minutes\"\r\n        android:inputType=\"number\"\r\n\r\n        tools:ignore=\"RtlSymmetry\" />\r\n    <EditText\r\n        android:id=\"@+id/etNote\"\r\n        android:layout_width=\"320dp\"\r\n        android:layout_height=\"50dp\"\r\n        android:paddingStart=\"12dp\"\r\n\r\n        android:background=\"@drawable/edit_text_bg\"\r\n        android:hint=\"@string/note\"\r\n        tools:ignore=\"RtlSymmetry\" />\r\n    <Button\r\n        android:id=\"@+id/btnSave\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"@string/save\"\r\n        android:backgroundTint=\"@color/black\"\r\n        android:layout_marginTop=\"40dp\"\r\n        android:layout_marginBottom=\"16dp\"/>\r\n\r\n    <Button\r\n        android:id=\"@+id/btnViewDetails\"\r\n        android:backgroundTint=\"@color/black\"\r\n\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"@string/view_details\"\r\n        android:layout_marginBottom=\"16dp\"/>\r\n\r\n    <Button\r\n        android:id=\"@+id/btnClear\"\r\n        android:backgroundTint=\"@color/black\"\r\n\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"@string/clear_data\"/>\r\n</LinearLayout>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml
+--- a/app/src/main/res/layout/activity_main.xml	(revision 857d33ff97659f06ce6c0a66c5d28697f3573ae0)
++++ b/app/src/main/res/layout/activity_main.xml	(date 1718017839024)
+@@ -15,7 +15,7 @@
+         android:layout_height="50dp"
+          android:paddingStart="12dp"
+        android:background="@drawable/edit_text_bg"
+-        android:hint="@string/enter_morning_screen_time_minutes"
++        android:hint="Lowest temperature"
+         android:inputType="number"
+         tools:ignore="RtlSymmetry" />
+ 
+@@ -26,7 +26,7 @@
+         android:paddingStart="12dp"
+ 
+         android:background="@drawable/edit_text_bg"
+-        android:hint="@string/enter_afternoon_screen_time_minutes"
++        android:hint="Highest temperature"
+         android:inputType="number"
+ 
+         tools:ignore="RtlSymmetry" />
+@@ -37,7 +37,7 @@
+         android:paddingStart="12dp"
+ 
+         android:background="@drawable/edit_text_bg"
+-        android:hint="@string/note"
++        android:hint="Waether Condtion"
+         tools:ignore="RtlSymmetry" />
+     <Button
+         android:id="@+id/btnSave"
+Index: app/src/main/res/layout/activity_splash.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:orientation=\"vertical\"\r\n    android:gravity=\"center\"\r\n    android:id=\"@+id/splash\"\r\n    tools:context=\".SplashActivity\">\r\n\r\n    <TextView\r\n        android:id=\"@+id/tvAppName\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"@string/screen_smart\"\r\n        android:textSize=\"24sp\"\r\n        android:textStyle=\"bold\"\r\n        android:paddingBottom=\"16dp\"/>\r\n\r\n    <TextView\r\n        android:id=\"@+id/tvDeveloperName\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_marginBottom=\"10dp\"\r\n        android:text=\"@string/your_name\"\r\n        android:textSize=\"18sp\"\r\n\r\n        />\r\n\r\n    <TextView\r\n        android:id=\"@+id/tvStudentNumber\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_marginBottom=\"10dp\"\r\n\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"@string/student_number\"\r\n        android:textSize=\"18sp\"\r\n        />\r\n\r\n    <ImageView\r\n        android:id=\"@+id/ivLogo\"\r\n        android:layout_width=\"100dp\"\r\n        android:layout_height=\"100dp\"\r\n        android:contentDescription=\"@string/todo\"\r\n        android:src=\"@drawable/clocks\"\r\n\r\n        />\r\n\r\n    <Button\r\n        android:id=\"@+id/btnStart\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"@string/start\"\r\n        android:backgroundTint=\"@color/black\"\r\n        android:layout_marginTop=\"16dp\"\r\n\r\n        />\r\n\r\n    <Button\r\n        android:id=\"@+id/btnExit\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"@string/exit\"\r\n        android:backgroundTint=\"@color/black\"\r\n        android:layout_marginTop=\"16dp\"\r\n        />\r\n</LinearLayout>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_splash.xml b/app/src/main/res/layout/activity_splash.xml
+--- a/app/src/main/res/layout/activity_splash.xml	(revision 857d33ff97659f06ce6c0a66c5d28697f3573ae0)
++++ b/app/src/main/res/layout/activity_splash.xml	(date 1718017268483)
+@@ -12,7 +12,7 @@
+         android:id="@+id/tvAppName"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+-        android:text="@string/screen_smart"
++        android:text="WeatherRecorder"
+         android:textSize="24sp"
+         android:textStyle="bold"
+         android:paddingBottom="16dp"/>
+@@ -22,7 +22,7 @@
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="10dp"
+-        android:text="@string/your_name"
++        android:text="Mwansa Yumbe"
+         android:textSize="18sp"
+ 
+         />
+@@ -31,9 +31,8 @@
+         android:id="@+id/tvStudentNumber"
+         android:layout_width="wrap_content"
+         android:layout_marginBottom="10dp"
+-
+         android:layout_height="wrap_content"
+-        android:text="@string/student_number"
++        android:text="ST10461894"
+         android:textSize="18sp"
+         />
+ 
+Index: app/src/main/java/com/android/myapplication/DetailActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.android.myapplication\r\n\r\nimport android.annotation.SuppressLint\r\nimport android.os.Bundle\r\nimport android.widget.Button\r\nimport android.widget.TextView\r\nimport androidx.activity.enableEdgeToEdge\r\nimport androidx.appcompat.app.AppCompatActivity\r\nimport androidx.core.view.ViewCompat\r\nimport androidx.core.view.WindowInsetsCompat\r\n\r\nclass DetailActivity : AppCompatActivity() {\r\n    @SuppressLint(\"MissingInflatedId\")\r\n    private lateinit var tvDetails:TextView\r\n    private lateinit var tvAverage:TextView\r\n    private lateinit var btnBack:Button\r\n    @SuppressLint(\"MissingInflatedId\", \"SetTextI18n\")\r\n    override fun onCreate(savedInstanceState: Bundle?) {\r\n        super.onCreate(savedInstanceState)\r\n        enableEdgeToEdge()\r\n        setContentView(R.layout.activity_detail)\r\n        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.details)) { v, insets ->\r\n            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())\r\n            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)\r\n            insets\r\n        }\r\n\r\n        tvDetails = findViewById(R.id.tvDetails)\r\n        tvAverage = findViewById(R.id.tvAverage)\r\n        btnBack = findViewById(R.id.btnBack)\r\n\r\n        val morningTimes = intent.getIntArrayExtra(\"morningTimes\")?.toList() ?: listOf()\r\n        val afternoonTimes = intent.getIntArrayExtra(\"afternoonTimes\")?.toList() ?: listOf()\r\n        val notes = intent.getStringArrayExtra(\"notes\")?.toList() ?: listOf()\r\n\r\n        tvDetails.text = \"Details for each day:\\n\"\r\n        for (i in morningTimes.indices) {\r\n            tvDetails.append(\"Day ${i + 1}: Morning: ${morningTimes[i]} min, Afternoon: ${afternoonTimes[i]} min, Activity: ${notes[i]}\\n\")\r\n        }\r\n         val totalMorning = morningTimes.sum()\r\n        val totalAfternoon = afternoonTimes.sum()\r\n        val averageMorning = if (morningTimes.isNotEmpty()) totalMorning / morningTimes.size else 0\r\n        val averageAfternoon = if (afternoonTimes.isNotEmpty()) totalAfternoon / afternoonTimes.size else 0\r\n        val averageTotal = averageMorning + averageAfternoon\r\n\r\n        tvAverage.text = \"Average Screen Time: $averageTotal min\"\r\n\r\n        btnBack.setOnClickListener {\r\n            finish()\r\n        }\r\n    }\r\n    }\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/android/myapplication/DetailActivity.kt b/app/src/main/java/com/android/myapplication/DetailActivity.kt
+--- a/app/src/main/java/com/android/myapplication/DetailActivity.kt	(revision 857d33ff97659f06ce6c0a66c5d28697f3573ae0)
++++ b/app/src/main/java/com/android/myapplication/DetailActivity.kt	(date 1718022597759)
+@@ -35,7 +35,7 @@
+ 
+         tvDetails.text = "Details for each day:\n"
+         for (i in morningTimes.indices) {
+-            tvDetails.append("Day ${i + 1}: Morning: ${morningTimes[i]} min, Afternoon: ${afternoonTimes[i]} min, Activity: ${notes[i]}\n")
++            tvDetails.append("Day ${i + 1}:Low: ${morningTimes[i]} Degree, High: ${afternoonTimes[i]} Degrees, Weather Condition: ${notes[i]}\n")
+         }
+          val totalMorning = morningTimes.sum()
+         val totalAfternoon = afternoonTimes.sum()
+@@ -43,7 +43,7 @@
+         val averageAfternoon = if (afternoonTimes.isNotEmpty()) totalAfternoon / afternoonTimes.size else 0
+         val averageTotal = averageMorning + averageAfternoon
+ 
+-        tvAverage.text = "Average Screen Time: $averageTotal min"
++        tvAverage.text = "Average Temp: $averageTotal Degrees(C)"
+ 
+         btnBack.setOnClickListener {
+             finish()
+Index: ../.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/vcs.xml b/../.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1718007936837)
++++ b/../.idea/vcs.xml	(date 1718007936837)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../.idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/gradle.xml b/../.idea/gradle.xml
+new file mode 100644
+--- /dev/null	(date 1718009374162)
++++ b/../.idea/gradle.xml	(date 1718009374162)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
++  <component name="GradleSettings">
++    <option name="parallelModelFetch" value="true" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_21\" project-jdk-name=\"Android API 34, extension level 7 Platform\" project-jdk-type=\"Android SDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../.idea/misc.xml b/../.idea/misc.xml
+--- a/../.idea/misc.xml	(revision 857d33ff97659f06ce6c0a66c5d28697f3573ae0)
++++ b/../.idea/misc.xml	(date 1718007936847)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" project-jdk-name="Android API 34, extension level 7 Platform" project-jdk-type="Android SDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_20_PREVIEW" project-jdk-name="Android API 34, extension level 7 Platform" project-jdk-type="Android SDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"ProjectRootManager\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 857d33ff97659f06ce6c0a66c5d28697f3573ae0)
++++ b/.idea/misc.xml	(date 1718008603304)
+@@ -1,6 +1,6 @@
+ <project version="4">
+   <component name="ExternalStorageConfigurationManager" enabled="true" />
+-  <component name="ProjectRootManager">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleJvm\" value=\"#GRADLE_LOCAL_JAVA_HOME\" />\r\n        <option name=\"resolveExternalAnnotations\" value=\"false\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 857d33ff97659f06ce6c0a66c5d28697f3573ae0)
++++ b/.idea/gradle.xml	(date 1718007936825)
+@@ -6,6 +6,12 @@
+       <GradleProjectSettings>
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+         <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$" />
++            <option value="$PROJECT_DIR$/app" />
++          </set>
++        </option>
+         <option name="resolveExternalAnnotations" value="false" />
+       </GradleProjectSettings>
+     </option>
