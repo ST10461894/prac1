@@ -1,10 +1,3 @@
-Weather App Pseudocode
-GITHUBLINK:
-
-
-
-Psuedocode
-
 // SplashActivity
 
 Start
@@ -139,5 +132,4 @@ Start
     End Method
 
 End 
-
 
