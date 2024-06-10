@@ -1,3 +1,5 @@
+https://github.com/ST10461894/prac1/tree/master/res
+https://github.com/ST10461894/prac1/tree/master/java/com/android/myapplication
 // SplashActivity
 
 Start
