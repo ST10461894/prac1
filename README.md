@@ -37,8 +37,8 @@ Start
     Private afternoonTimes: List<Int>
     Private notes: List<String>
 
-    Private etMorningTime: EditText
-    Private etAfternoonTime: EditText
+    Private etlow: EditText
+    Private ethigh: EditText
     Private etNote: EditText
     Private btnSave: Button
     Private btnViewDetails: Button
@@ -61,12 +61,12 @@ Start
         // Set onClick listeners for buttons
         btnSave.setOnClickListener
             Get morning time from etMorningTime and convert to Int
-            Get afternoon time from etAfternoonTime and convert to Int
+            Get low from high and convert to Int
             Get note from etNote
 
             If morning time and afternoon time are not null and note is not empty
                 Add morning time to morningTimes
-                Add afternoon time to afternoonTimes
+                Add low time to high
                 Add note to notes
                 Show "Data saved successfully!" message
             Else
@@ -79,7 +79,7 @@ Start
 
         btnClear.setOnClickListener
             Clear text fields etMorningTime, etAfternoonTime, etNote
-            Clear lists morningTimes, afternoonTimes, notes
+            Clear lists low, high notes
             Show "Data cleared!" message
 
     End Method
@@ -117,13 +117,13 @@ Start
         For each day index in morningTimes
             Append day details to tvDetails text
 
-        // Calculate and display average screen time
-        Total morning time = Sum of morningTimes
-        Total afternoon time = Sum of afternoonTimes
-        Average morning time = Total morning time / Size of morningTimes
-        Average afternoon time = Total afternoon time / Size of afternoonTimes
+        // Calculate and display average weather
+        Total morning time = Sum of low
+        Total afternoon time = Sum of high
+        Average morning time = Total low / Size of high
+        Average afternoon time = Total high / Size of high
         Average total time = Average morning time + Average afternoon time
-        Set tvAverage text to "Average Screen Time: " + Average total time + " min"
+        Set tvAverage text to "Average weather " + Average total time + " min"
 
         // Set onClick listener for back button
         btnBack.setOnClickListener
