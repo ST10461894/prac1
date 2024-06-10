@@ -36,6 +36,8 @@ Start
     Private morningTimes: List<Int>
     Private afternoonTimes: List<Int>
     Private notes: List<String>
+    private low: List<String>
+    private high: List<String>
 
     Private etlow: EditText
     Private ethigh: EditText
